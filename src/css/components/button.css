@@ -6,6 +6,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
+  cursor: pointer;
 
   &_success {
     background: var(--green-color);

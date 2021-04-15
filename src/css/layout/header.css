@@ -55,7 +55,7 @@
 
     &__top {
       background: var(--white-color);
-      padding: 39px 0 32px;
+      padding: 39px 0 35px;
 
       @media (--mq-md) {
         padding: 24px 18px 18px;
@@ -105,7 +105,7 @@
       font-size: 14px;
       line-height: 21px;
       font-weight: 500;
-      margin-bottom: 35px;
+      margin-bottom: 38px;
 
       @media (--mq-md) {
         margin-bottom: 22px;
@@ -210,7 +210,7 @@
     color: var(--white-color);
     font-family: var(--font-family-headings);
     text-align: left;
-    margin-top: 33px;
+    margin-top: 38px;
 
     &__title {
       font-size: 24px;
@@ -260,7 +260,7 @@
 
     &__text-field {
       width: 100%;
-      padding: 16px 19px 14px;
+      padding: 18px 19px 14px;
       color: #c1c1c1;
       margin-bottom: 16px;
       font-size: 14px;
@@ -269,7 +269,7 @@
       border: 0;
 
       @media (--mq-md) {
-        padding: 16px 19px 14px;
+        padding: 20px 19px 14px;
       }
 
       @media (--mq-sm) {
@@ -283,7 +283,7 @@
 
     @media (--mq-md) {
       max-width: 326px;
-      margin-top: 15px;
+      margin-top: 21px;
     }
 
     @media (--mq-sm) {
