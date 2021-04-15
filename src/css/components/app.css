@@ -30,7 +30,7 @@
   &__description {
     color: var(--light-grey-color);
     max-width: 310px;
-    margin-top: 16px;
+    margin-top: 13px;
 
     @media (--mq-md) {
       max-width: 100%;
