@@ -22,7 +22,7 @@
 }
 
 .payment-left {
-  margin: 54px 98px 41px 0;
+  margin: 54px 98px 41px -61px;
   color: var(--white-color);
   max-width: 422px;
 
@@ -47,6 +47,10 @@
     line-height: 15px;
     font-weight: 600;
     margin: 0 0 19px;
+
+    @media (--mq-md) {
+      margin: 0 0 15px;
+    }
   }
 
   &__separator {
@@ -80,8 +84,12 @@
       margin-right: 14px;
     }
 
-    &:nth-child(1):before {
-      background-image: url('/images/icons/hd.svg');
+    &:nth-child(1) {
+      margin-bottom: 21px;
+
+      &:before {
+        background-image: url('/images/icons/hd.svg');
+      }
     }
 
     &:nth-child(2):before {
@@ -89,18 +97,30 @@
       height: 21px;
     }
 
-    &:nth-child(3):before {
-      background-image: url('/images/icons/game.svg');
-      height: 15px;
+    &:nth-child(3) {
+      margin-bottom: 19px;
+
+      &:before {
+        background-image: url('/images/icons/game.svg');
+        height: 15px;
+      }
     }
 
-    &:nth-child(4):before {
-      background-image: url('/images/icons/mark.svg');
-      height: 37px;
+    &:nth-child(4) {
+      margin-bottom: 13px;
+
+      &:before {
+        background-image: url('/images/icons/mark.svg');
+        height: 37px;
+      }
     }
 
-    &:nth-child(5):before {
-      background-image: url('/images/icons/remove.svg');
+    &:nth-child(5) {
+      margin-bottom: 21px;
+
+      &:before {
+        background-image: url('/images/icons/remove.svg');
+      }
     }
 
     &:nth-child(6):before {
@@ -168,13 +188,13 @@
 
   &__header {
     display: flex;
-    background: url('/images/icons/secure.svg') top 19px left 30px / 17px 20px
+    background: url('/images/icons/secure.svg') top 26px left 30px / 17px 20px
         no-repeat,
       var(--grey-color);
     padding: 19px 53px 29px 61px;
 
     &-text {
-      padding-right: 25px;
+      padding-right: 30px;
       border-right: 1px solid #e3e3e3;
 
       @media (--mq-md) {
@@ -187,6 +207,10 @@
       font-weight: 700;
       color: #040404;
       margin-bottom: 4px;
+
+      @media (--mq-md) {
+        margin-bottom: 0;
+      }
     }
 
     &-subtitle {
@@ -226,13 +250,16 @@
       }
 
       @media (--mq-md) {
-        padding-left: 13px;
+        padding-left: 21px;
       }
     }
 
     @media (--mq-md) {
-      padding: 9px 20px 7px 61px;
+      padding: 9px 20px 7px 66px;
       align-items: center;
+      background: url('/images/icons/secure.svg') top 18px left 35px / 17px 20px
+          no-repeat,
+        var(--grey-color);
     }
   }
 
@@ -281,7 +308,7 @@
 
   &__text-field {
     width: 100%;
-    padding: 12px 15px;
+    padding: 12px 15px 11px;
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
@@ -371,6 +398,9 @@
   &__button {
     border-radius: 0;
     margin-bottom: 17px;
+    padding: 10px 40px;
+    font-size: 14px;
+    line-height: 21px;
 
     @media (--mq-md) {
       padding: 10px 0 8px;
@@ -400,10 +430,13 @@
     line-height: 15px;
     font-weight: 500;
     color: #8d8d8d;
+    max-width: 380px;
+    margin-bottom: 4px;
   }
 
   @media (--mq-md) {
     max-width: 329px;
+    margin-top: 38px;
   }
 
   @media (--mq-sm) {
