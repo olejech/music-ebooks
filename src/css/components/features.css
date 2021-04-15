@@ -55,14 +55,15 @@
     right: -117px;
     width: 274px;
     height: 179px;
-    background: url('/images/icons/label-free.png') 0 0 / 274px 179px no-repeat;
+    background: url('../images/icons/label-free.png') 0 0 / 274px 179px
+      no-repeat;
 
     @media (--mq-md) {
       top: 43px;
       right: -20px;
       width: 191px;
       height: 125px;
-      background: url('/images/icons/label-free.png') 0 0 / 191px 125px
+      background: url('../images/icons/label-free.png') 0 0 / 191px 125px
         no-repeat;
     }
 
@@ -71,7 +72,7 @@
       right: -25px;
       width: 173px;
       height: 113px;
-      background: url('/images/icons/label-free.png') 0 0 / 173px 113px
+      background: url('../images/icons/label-free.png') 0 0 / 173px 113px
         no-repeat;
     }
   }
@@ -84,29 +85,29 @@
 
     &_blue {
       border-left: 3px solid var(--blue-color);
-      background: url('/images/icons/clock.svg') top 27px left 20px / 26px 26px
-          no-repeat,
+      background: url('../images/icons/clock.svg') top 27px left 20px / 26px
+          26px no-repeat,
         #212121;
     }
 
     &_orange {
       border-left: 3px solid var(--orange-color);
-      background: url('/images/icons/cube.svg') top 27px left 20px / 26px 26px
+      background: url('../images/icons/cube.svg') top 27px left 20px / 26px 26px
           no-repeat,
         #212121;
     }
 
     &_purple {
       border-left: 3px solid var(--purple-color);
-      background: url('/images/icons/platforms.svg') top 27px left 20px / 26px
+      background: url('../images/icons/platforms.svg') top 27px left 20px / 26px
           26px no-repeat,
         #212121;
     }
 
     &_red {
       border-left: 3px solid var(--red-color);
-      background: url('/images/icons/cancel.svg') top 27px left 20px / 26px 26px
-          no-repeat,
+      background: url('../images/icons/cancel.svg') top 27px left 20px / 26px
+          26px no-repeat,
         #212121;
     }
 

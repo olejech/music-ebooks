@@ -53,7 +53,7 @@ gulp.task('css', () => {
 gulp.task('html', () => {
   return gulp
     .src(path.src.html)
-    .pipe(htmlMin({ collapseWhitespace: true }))
+    .pipe(htmlMin())
     .pipe(gulp.dest(path.build.html))
     .pipe(reload({ stream: true }))
 })

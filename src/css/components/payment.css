@@ -11,9 +11,14 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(0deg, rgb(0, 0, 0) 8%, rgb(0, 0, 0, 0.01) 74%),
-    url('/images/bg.jpg') 0 / cover no-repeat;
+    url('../images/bg.jpg') 0 / cover no-repeat;
   margin-bottom: 107px;
   font-family: var(--font-family-headings);
+
+  a {
+    font-weight: 600;
+    color: inherit;
+  }
 
   @media (--mq-sm) {
     flex-direction: column;
@@ -88,12 +93,12 @@
       margin-bottom: 21px;
 
       &:before {
-        background-image: url('/images/icons/hd.svg');
+        background-image: url('../images/icons/hd.svg');
       }
     }
 
     &:nth-child(2):before {
-      background-image: url('/images/icons/cube2.svg');
+      background-image: url('../images/icons/cube2.svg');
       height: 21px;
     }
 
@@ -101,7 +106,7 @@
       margin-bottom: 19px;
 
       &:before {
-        background-image: url('/images/icons/game.svg');
+        background-image: url('../images/icons/game.svg');
         height: 15px;
       }
     }
@@ -110,7 +115,7 @@
       margin-bottom: 13px;
 
       &:before {
-        background-image: url('/images/icons/mark.svg');
+        background-image: url('../images/icons/mark.svg');
         height: 37px;
       }
     }
@@ -119,12 +124,12 @@
       margin-bottom: 21px;
 
       &:before {
-        background-image: url('/images/icons/remove.svg');
+        background-image: url('../images/icons/remove.svg');
       }
     }
 
     &:nth-child(6):before {
-      background-image: url('/images/icons/device.svg');
+      background-image: url('../images/icons/device.svg');
       height: 18px;
     }
 
@@ -188,7 +193,7 @@
 
   &__header {
     display: flex;
-    background: url('/images/icons/secure.svg') top 26px left 30px / 17px 20px
+    background: url('../images/icons/secure.svg') top 26px left 30px / 17px 20px
         no-repeat,
       var(--grey-color);
     padding: 19px 53px 29px 61px;
@@ -234,7 +239,7 @@
         display: block;
         width: 75px;
         height: 15px;
-        background: url('/images/icons/star.svg') 0 / 15px repeat-x;
+        background: url('../images/icons/star.svg') 0 / 15px repeat-x;
         margin-bottom: 6px;
 
         @media (--mq-md) {
@@ -257,8 +262,8 @@
     @media (--mq-md) {
       padding: 9px 20px 7px 66px;
       align-items: center;
-      background: url('/images/icons/secure.svg') top 18px left 35px / 17px 20px
-          no-repeat,
+      background: url('../images/icons/secure.svg') top 18px left 35px / 17px
+          20px no-repeat,
         var(--grey-color);
     }
   }
@@ -358,7 +363,7 @@
     width: 18px;
     height: 18px;
     margin-right: 96px;
-    background: url('/images/icons/question.svg') no-repeat;
+    background: url('../images/icons/question.svg') no-repeat;
 
     @media (--mq-md) {
       margin-right: 21px;
@@ -371,13 +376,13 @@
     width: 41px;
     height: 27px;
     margin-right: 6px;
-    background: url('/images/icons/master-card.png') 0 / 41px 27px no-repeat;
+    background: url('../images/icons/master-card.png') 0 / 41px 27px no-repeat;
 
     @media (--mq-md) {
       margin-right: 0;
       width: 32px;
       height: 21px;
-      background: url('/images/icons/master-card.png') 0 / 32px 21px no-repeat;
+      background: url('../images/icons/master-card.png') 0 / 32px 21px no-repeat;
     }
   }
 
@@ -386,12 +391,12 @@
     top: 10px;
     width: 56px;
     height: 19px;
-    background: url('/images/icons/visa.png') 0 / 56px 19px no-repeat;
+    background: url('../images/icons/visa.png') 0 / 56px 19px no-repeat;
 
     @media (--mq-md) {
       width: 44px;
       height: 15px;
-      background: url('/images/icons/visa.png') 0 / 44px 15px no-repeat;
+      background: url('../images/icons/visa.png') 0 / 44px 15px no-repeat;
     }
   }
 

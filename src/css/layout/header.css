@@ -4,7 +4,7 @@
   justify-content: center;
   margin-top: 25px;
   background: linear-gradient(0deg, rgb(0, 0, 0) 8%, rgb(0, 0, 0, 0.01) 74%),
-    url('/images/bg.jpg') 0 / cover no-repeat;
+    url('../images/bg.jpg') 0 / cover no-repeat;
   margin-bottom: 107px;
 
   &__container {
