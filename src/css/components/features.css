@@ -65,7 +65,7 @@
         no-repeat;
     }
 
-    @media (--mq-md) {
+    @media (--mq-sm) {
       top: 117px;
       right: -25px;
       width: 173px;
