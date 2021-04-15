@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="payment-header">
+      <a href="#">
+        <img src="/images/logo.svg" alt="Logo" />
+      </a>
+    </header>
+    <main class="payment-main">
+      <div class="payment-left">
+        <h1 class="payment-left__title">
+          <div class="text-green payment-left__brand">Unlimited access</div>
+          to&nbsp;thousands of&nbsp;titles, genres and multimedia
+        </h1>
+        <p class="payment-left__subtitle">
+          Unlimited titles, audiobooks, magazines and more
+        </p>
+        <hr class="payment-left__separator" />
+        <ul class="payment-left__list">
+          <li class="payment-left__item">
+            Unlimited titles in&nbsp;FullHD quality
+          </li>
+          <li class="payment-left__item">Thousands of&nbsp;new titles</li>
+          <li class="payment-left__item">Watch with your console</li>
+          <li class="payment-left__item">+100 new titles every day</li>
+          <li class="payment-left__item">No&nbsp;commitment</li>
+          <li class="payment-left__item">Accesible from any device</li>
+        </ul>
+
+        <div class="payment-left__contacts">
+          <span class="payment-left__contacts-title text-orange"
+            >Any questions?</span
+          >
+          +1111111111
+          <div>support@support.com</div>
+        </div>
+        <div class="payment-left__guarantee-title">
+          Is&nbsp;the platform safe to&nbsp;use?
+        </div>
+        <div class="payment-left__guarantee-text">
+          All users are protected by&nbsp;our service guarantee. Your
+          information will be&nbsp;safe because we&nbsp;use the best security
+          measures to&nbsp;protect our members. We&nbsp;value privacy and will
+          not share your private information with third parties.
+        </div>
+      </div>
+
+      <div class="payment-card">
+        <div class="payment-card__header">
+          <div class="payment-card__header-text">
+            <div class="payment-card__header-title">Secure Server</div>
+            <div class="payment-card__header-subtitle">
+              Secure and encrypted 256-bit TLS verification
+            </div>
+          </div>
+          <div class="payment-card__header-reviews">
+            <div class="payment-card__header-reviews-stars"></div>
+            <div class="payment-card__header-reviews-count-reviews">
+              Based on&nbsp;512,873 reviews
+            </div>
+          </div>
+        </div>
+        <div class="payment-card__right">
+          <h2 class="payment-card__right-title">Free membership: 0$</h2>
+          <p class="payment-card__right-caption">
+            Your credit card will
+            <span class="text-green">NOT</span> be&nbsp;charged for the free
+            membership. We&nbsp;just need it&nbsp;to&nbsp;verify the country
+            at&nbsp;our content license.
+          </p>
+          <form class="payment-card__form">
+            <label for="card-holder" class="payment-card__text-field-label"
+              >Cardholder name</label
+            >
+            <input
+              id="card-holder"
+              type="text"
+              class="payment-card__text-field"
+              placeholder="Cardholder name"
+            />
+            <label for="card-number" class="payment-card__text-field-label"
+              >Card Number</label
+            >
+            <input
+              id="card-number"
+              type="text"
+              class="payment-card__text-field"
+              placeholder="Your Card Number"
+            />
+
+            <div class="payment-card__card-info">
+              <div>
+                <label for="expiry-date" class="payment-card__text-field-label"
+                  >Expiry Date</label
+                >
+                <input
+                  id="expiry-date"
+                  type="text"
+                  class="payment-card__text-field payment-card__text-field_expiry"
+                  placeholder="MM / YY"
+                />
+              </div>
+              <div>
+                <label for="cvv" class="payment-card__text-field-label"
+                  >CVV</label
+                >
+                <input
+                  id="cvv"
+                  type="text"
+                  class="payment-card__text-field payment-card__text-field_cvv"
+                  placeholder="CVV"
+                />
+              </div>
+              <div class="payment-card__question"></div>
+              <div class="payment-card__master-card"></div>
+              <div class="payment-card__visa"></div>
+            </div>
+            <button
+              type="submit"
+              class="button button_success uppercase payment-card__button"
+            >
+              Continue
+            </button>
+            <div class="payment-card__submit-title">
+              Why the credit card for a&nbsp;free account?
+            </div>
+            <div class="payment-card__submit-text">
+              &quot;We&nbsp;have content licenses for our titles for certain
+              countries only. That&rsquo;s why we&nbsp;need to&nbsp;verify your
+              geographic location using a&nbsp;valid credit card. Your
+              subscription which entitles you to&nbsp;all our content
+              is&nbsp;free, unless you decide to&nbsp;switch to&nbsp;Premium
+              mode after the end of&nbsp;the free 5&nbsp;day subscription.
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

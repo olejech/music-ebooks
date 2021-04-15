@@ -1,0 +1,412 @@
+.payment-header {
+  height: 45px;
+  background: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(0deg, rgb(0, 0, 0) 8%, rgb(0, 0, 0, 0.01) 74%),
+    url('/images/bg.jpg') 0 / cover no-repeat;
+  margin-bottom: 107px;
+  font-family: var(--font-family-headings);
+
+  @media (--mq-sm) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.payment-left {
+  margin: 54px 98px 41px 0;
+  color: var(--white-color);
+  max-width: 422px;
+
+  &__brand {
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    margin: 0 0 8px;
+
+    @media (--mq-sm) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 600;
+    margin: 0 0 19px;
+  }
+
+  &__separator {
+    max-width: 281px;
+    height: 2px;
+    background: rgba(47, 47, 46, 0.8);
+    border: 0;
+    margin: 0 0 20px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+    &:before {
+      content: '';
+      display: block;
+      width: 28px;
+      height: 28px;
+      background-repeat: no-repeat;
+      margin-right: 14px;
+    }
+
+    &:nth-child(1):before {
+      background-image: url('/images/icons/hd.svg');
+    }
+
+    &:nth-child(2):before {
+      background-image: url('/images/icons/cube2.svg');
+      height: 21px;
+    }
+
+    &:nth-child(3):before {
+      background-image: url('/images/icons/game.svg');
+      height: 15px;
+    }
+
+    &:nth-child(4):before {
+      background-image: url('/images/icons/mark.svg');
+      height: 37px;
+    }
+
+    &:nth-child(5):before {
+      background-image: url('/images/icons/remove.svg');
+    }
+
+    &:nth-child(6):before {
+      background-image: url('/images/icons/device.svg');
+      height: 18px;
+    }
+
+    &:last-child {
+      margin-bottom: 26px;
+
+      @media (--mq-sm) {
+        margin-bottom: 22px;
+      }
+    }
+  }
+
+  &__contacts {
+    padding: 11px 17px 14px;
+    background: #323232;
+    line-height: 18px;
+    font-weight: 600;
+    margin-bottom: 28px;
+    max-width: 379px;
+
+    @media (--mq-md) {
+      max-width: 282px;
+    }
+  }
+
+  &__contacts-title {
+    display: inline-block;
+    margin-right: 19px;
+  }
+
+  &__guarantee-title {
+    line-height: 18px;
+    font-weight: 700;
+    margin-bottom: 7px;
+  }
+
+  &__guarantee-text {
+    font-weight: 500;
+    max-width: 343px;
+    color: #e5e5e5;
+
+    @media (--mq-md) {
+      max-width: 281px;
+    }
+  }
+
+  @media (--mq-md) {
+    max-width: 304px;
+    margin: 38px 63px 44px 0;
+  }
+
+  @media (--mq-sm) {
+    max-width: auto;
+    margin: 34px 0 79px;
+  }
+}
+
+.payment-card {
+  margin-top: 54px;
+  max-width: 459px;
+
+  &__header {
+    display: flex;
+    background: url('/images/icons/secure.svg') top 19px left 30px / 17px 20px
+        no-repeat,
+      var(--grey-color);
+    padding: 19px 53px 29px 61px;
+
+    &-text {
+      padding-right: 25px;
+      border-right: 1px solid #e3e3e3;
+
+      @media (--mq-md) {
+        padding-right: 8px;
+      }
+    }
+
+    &-title {
+      line-height: 18px;
+      font-weight: 700;
+      color: #040404;
+      margin-bottom: 4px;
+    }
+
+    &-subtitle {
+      font-weight: 600;
+      font-size: 8px;
+      line-height: 12px;
+
+      @media (--mq-md) {
+        max-width: 111px;
+      }
+
+      @media (--mq-sm) {
+        line-height: 10px;
+      }
+    }
+
+    &-reviews {
+      padding-left: 26px;
+
+      &-stars {
+        display: block;
+        width: 75px;
+        height: 15px;
+        background: url('/images/icons/star.svg') 0 / 15px repeat-x;
+        margin-bottom: 6px;
+
+        @media (--mq-md) {
+          margin-bottom: 4px;
+        }
+      }
+
+      &-count-reviews {
+        font-size: 8px;
+        line-height: 12px;
+        font-weight: 600;
+        color: #777777;
+      }
+
+      @media (--mq-md) {
+        padding-left: 13px;
+      }
+    }
+
+    @media (--mq-md) {
+      padding: 9px 20px 7px 61px;
+      align-items: center;
+    }
+  }
+
+  &__right {
+    padding: 22px 30px 14px;
+    background: var(--white-color);
+
+    &-title {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+
+    &-caption {
+      font-size: 10px;
+      line-height: 15px;
+      font-weight: 600;
+      margin: 0 0 26px;
+
+      @media (--mq-md) {
+        margin: 0 0 8px;
+      }
+    }
+
+    @media (--mq-md) {
+      padding: 20px 27px 38px 30px;
+    }
+
+    @media (--mq-sm) {
+      padding: 20px 27px 21px 30px;
+    }
+  }
+
+  &__text-field-label {
+    display: block;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+
+    @media (--mq-md) {
+      margin-bottom: 3px;
+    }
+  }
+
+  &__text-field {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    border: 1px solid #eff0f5;
+    background: none;
+    color: #aaaaaa;
+    margin-bottom: 13px;
+
+    @media (--mq-md) {
+      padding: 12px 15px 9px;
+    }
+  }
+
+  &__card-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+
+    @media (--mq-md) {
+      margin-bottom: 24px;
+    }
+
+    @media (--mq-sm) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__text-field_expiry {
+    width: 80px;
+    margin-right: 32px;
+    margin-bottom: 0;
+
+    @media (--mq-md) {
+      margin-right: 7px;
+    }
+  }
+
+  &__text-field_cvv {
+    width: 60px;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  &__question {
+    position: relative;
+    top: 10px;
+    width: 18px;
+    height: 18px;
+    margin-right: 96px;
+    background: url('/images/icons/question.svg') no-repeat;
+
+    @media (--mq-md) {
+      margin-right: 21px;
+    }
+  }
+
+  &__master-card {
+    position: relative;
+    top: 10px;
+    width: 41px;
+    height: 27px;
+    margin-right: 6px;
+    background: url('/images/icons/master-card.png') 0 / 41px 27px no-repeat;
+
+    @media (--mq-md) {
+      margin-right: 0;
+      width: 32px;
+      height: 21px;
+      background: url('/images/icons/master-card.png') 0 / 32px 21px no-repeat;
+    }
+  }
+
+  &__visa {
+    position: relative;
+    top: 10px;
+    width: 56px;
+    height: 19px;
+    background: url('/images/icons/visa.png') 0 / 56px 19px no-repeat;
+
+    @media (--mq-md) {
+      width: 44px;
+      height: 15px;
+      background: url('/images/icons/visa.png') 0 / 44px 15px no-repeat;
+    }
+  }
+
+  &__button {
+    border-radius: 0;
+    margin-bottom: 17px;
+
+    @media (--mq-md) {
+      padding: 10px 0 8px;
+      line-height: 21px;
+      margin-bottom: 34px;
+    }
+
+    @media (--mq-md) {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__submit-title {
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 600;
+    margin-bottom: 7px;
+    color: #8d8d8d;
+
+    @media (--mq-md) {
+      margin-bottom: 6px;
+    }
+  }
+
+  &__submit-text {
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 500;
+    color: #8d8d8d;
+  }
+
+  @media (--mq-md) {
+    max-width: 329px;
+  }
+
+  @media (--mq-sm) {
+    margin-top: 0;
+  }
+}

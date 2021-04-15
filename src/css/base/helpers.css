@@ -2,6 +2,10 @@
   color: var(--green-color);
 }
 
+.text-orange {
+  color: #ffb10e;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
