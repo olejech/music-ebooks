@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -126,6 +130,26 @@
 
       <section class="app container">
         <img src="/images/app.png" alt="App" class="app__image" />
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="/images/app-mobile-left.png"
+                alt="App left part"
+                class="app__image-mobile"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="/images/app-mobile-right.png"
+                alt="App right part"
+                class="app__image-mobile"
+              />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
         <div class="app__description">
           <div class="app__item">
             <div class="app__title">The best of&nbsp;content</div>
@@ -157,5 +181,8 @@
         </div>
       </section>
     </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>

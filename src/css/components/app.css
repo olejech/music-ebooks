@@ -14,7 +14,16 @@
     }
 
     @media (--mq-sm) {
-      /* display: none; */
+      display: none;
+    }
+  }
+
+  &__image-mobile {
+    display: none;
+
+    @media (--mq-sm) {
+      display: block;
+      max-width: 344px;
     }
   }
 

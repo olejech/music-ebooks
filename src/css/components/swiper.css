@@ -1,0 +1,18 @@
+.swiper-container {
+  width: 344px;
+}
+
+.swiper-pagination {
+  bottom: 0;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background: #1b1b1b;
+  width: 11px;
+  height: 11px;
+  opacity: 1;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--white-color);
+}
