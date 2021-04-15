@@ -79,9 +79,10 @@
       margin-bottom: 8px;
 
       @media (--mq-md) {
+        max-width: 210px;
         font-size: 20px;
         line-height: 24px;
-        margin-bottom: 19px;
+        margin: 0 auto 19px;
       }
     }
 
@@ -109,6 +110,11 @@
 
       @media (--mq-md) {
         margin-bottom: 22px;
+      }
+
+      @media (--mq-md) {
+        max-width: 241px;
+        margin: 0 auto;
       }
     }
 
@@ -140,7 +146,7 @@
       font-size: 14px;
       line-height: 18px;
       font-weight: 700;
-      width: 119px;
+      width: 99px;
 
       &:before {
         content: counter(step);
@@ -239,6 +245,7 @@
 
       @media (--mq-sm) {
         margin-bottom: 24px;
+        font-size: 13px;
       }
     }
 

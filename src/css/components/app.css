@@ -109,10 +109,29 @@
     line-height: 24px;
     font-weight: 600;
     margin-bottom: 11px;
+
+    @media (--mq-sm) {
+      max-width: 299px;
+    }
   }
 
   &__text {
     margin: 0;
+    max-width: 280px;
+
+    &:first-of-type {
+      @media (--mq-md) {
+        max-width: 170px;
+      }
+
+      @media (--mq-sm) {
+        max-width: 282px;
+      }
+    }
+
+    @media (--mq-md) {
+      max-width: 210px;
+    }
 
     @media (--mq-sm) {
       line-height: 18px;

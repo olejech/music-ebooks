@@ -34,7 +34,8 @@
 
     @media (--mq-sm) {
       line-height: 21px;
-      margin: 0 0 60px;
+      max-width: 283px;
+      margin: 0 auto 60px;
     }
   }
 
@@ -83,11 +84,27 @@
     color: var(--white-color);
     margin-right: 32px;
 
+    @media (--mq-md) {
+      margin-right: 49px;
+      margin-bottom: 48px;
+      padding: 72px 20px 52px;
+    }
+
+    @media (--mq-sm) {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+
     &_blue {
       border-left: 3px solid var(--blue-color);
       background: url('../images/icons/clock.svg') top 27px left 20px / 26px
           26px no-repeat,
         #212121;
+
+      @media (--mq-sm) {
+        min-width: 253px;
+        padding: 72px 9px 36px 20px;
+      }
     }
 
     &_orange {
@@ -109,17 +126,6 @@
       background: url('../images/icons/cancel.svg') top 27px left 20px / 26px
           26px no-repeat,
         #212121;
-    }
-
-    @media (--mq-md) {
-      margin-right: 49px;
-      margin-bottom: 48px;
-      padding: 72px 20px 52px;
-    }
-
-    @media (--mq-sm) {
-      margin-right: 0;
-      margin-bottom: 20px;
     }
   }
 
@@ -158,7 +164,16 @@
   }
 
   &__card-text {
+    max-width: 190px;
     margin: 0;
+
+    @media (--mq-md) {
+      max-width: 210px;
+    }
+
+    @media (--mq-sm) {
+      max-width: 222px;
+    }
   }
 
   @media (--mq-md) {
