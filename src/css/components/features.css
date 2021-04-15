@@ -1,5 +1,6 @@
 .features {
   position: relative;
+  margin-bottom: 193px;
 
   &__title {
     font-size: 20px;
@@ -54,14 +55,14 @@
     right: -130px;
     width: 274px;
     height: 179px;
-    background: url('/images/icons/label-free.svg') 0 0 / 274px 179px no-repeat;
+    background: url('/images/icons/label-free.png') 0 0 / 274px 179px no-repeat;
 
     @media (--mq-md) {
       top: 43px;
       right: -20px;
       width: 191px;
       height: 125px;
-      background: url('/images/icons/label-free.svg') 0 0 / 191px 125px
+      background: url('/images/icons/label-free.png') 0 0 / 191px 125px
         no-repeat;
     }
 
@@ -70,7 +71,7 @@
       right: -25px;
       width: 173px;
       height: 113px;
-      background: url('/images/icons/label-free.svg') 0 0 / 173px 113px
+      background: url('/images/icons/label-free.png') 0 0 / 173px 113px
         no-repeat;
     }
   }
@@ -133,13 +134,17 @@
       margin-bottom: 0;
     }
 
-    @media (--mq-md) {
+    @media (--mq-sm) {
       margin-bottom: 20px;
     }
   }
 
   &__card:last-child {
     margin-right: 0;
+
+    @media (--mq-sm) {
+      margin-bottom: 0;
+    }
   }
 
   &__card-title {
@@ -152,5 +157,13 @@
 
   &__card-text {
     margin: 0;
+  }
+
+  @media (--mq-md) {
+    margin-bottom: 72px;
+  }
+
+  @media (--mq-sm) {
+    margin-bottom: 60px;
   }
 }

@@ -1,0 +1,143 @@
+.app {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 28px;
+
+  &__image {
+    display: block;
+    width: 100%;
+    max-width: 654px;
+    margin-right: 111px;
+
+    @media (--mq-md) {
+      margin-right: 0;
+    }
+
+    @media (--mq-sm) {
+      /* display: none; */
+    }
+  }
+
+  &__description {
+    color: var(--light-grey-color);
+    max-width: 310px;
+    margin-top: 16px;
+
+    @media (--mq-md) {
+      max-width: 100%;
+      display: flex;
+      margin-top: 43px;
+    }
+
+    @media (--mq-sm) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: 54px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      background: #484848;
+
+      @media (--mq-md) {
+        display: none;
+      }
+    }
+
+    &:before {
+      top: 12px;
+      left: -188px;
+      width: 156px;
+      height: 1px;
+    }
+
+    &:after {
+      top: 10px;
+      left: -32px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+    }
+
+    &:nth-child(3):before {
+      width: 79px;
+      left: -111px;
+    }
+
+    @media (--mq-md) {
+      margin-bottom: 0;
+
+      &:nth-child(1) {
+        max-width: 181px;
+        margin-right: 60px;
+      }
+
+      &:nth-child(2) {
+        max-width: 166px;
+        margin-right: 41px;
+      }
+    }
+
+    @media (--mq-sm) {
+      &:nth-child(1),
+      &:nth-child(2) {
+        margin-bottom: 50px;
+        margin-right: 0;
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__title {
+    font-family: var(--font-family-headings);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 11px;
+  }
+
+  &__text {
+    margin: 0;
+
+    @media (--mq-sm) {
+      line-height: 18px;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0 0 0 8px;
+    list-style: none;
+  }
+
+  &__item-list {
+    position: relative;
+    margin-bottom: 2px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -8px;
+      top: 6px;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--white-color);
+    }
+  }
+
+  @media (--mq-md) {
+    flex-direction: column;
+    margin-bottom: 67px;
+  }
+
+  @media (--mq-sm) {
+    margin-bottom: 76px;
+  }
+}
