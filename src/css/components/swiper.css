@@ -1,9 +1,14 @@
 .swiper-container {
-  width: 344px;
+  display: none;
+  width: 334px;
+
+  @media (--mq-sm) {
+    display: block;
+  }
 }
 
 .swiper-pagination {
-  bottom: 0;
+  bottom: 0 !important;
 }
 
 .swiper-pagination .swiper-pagination-bullet {
