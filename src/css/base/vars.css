@@ -1,0 +1,30 @@
+:root {
+  /* Page */
+  --page-width: 1110px;
+  --page-width-md: 675px;
+  --page-width-sm: 309px;
+
+  /* Fonts */
+  --font-family: 'Open Sans', sans-serif;
+  --font-family-headings: 'Poppins', sans-serif;
+  --font-size: 12px;
+  --line-height: 16px;
+
+  /* Colors */
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --green-color: #8dbc39;
+  --orange-color: #f19236;
+  --blue-color: #4aa3cb;
+  --purple-color: #9260d0;
+  --red-color: #dd5263;
+  --dark-grey-color: #b3b3b3;
+  --light-grey-color: #d5d5d5;
+  --grey-color: #f3f3f3;
+  --text-color: #343435;
+
+  --transition: 0.25s ease-out;
+}
+
+@custom-media --mq-md (max-width: 1439px); /* Tablet */
+@custom-media --mq-sm (max-width: 767px); /* Mobile */

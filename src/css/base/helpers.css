@@ -1,0 +1,7 @@
+.text-green {
+  color: var(--green-color);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

@@ -1,0 +1,14 @@
+.button {
+  width: 100%;
+  padding: 13px 40px;
+  border: 0;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+
+  &_success {
+    background: var(--green-color);
+    color: var(--white-color);
+  }
+}
