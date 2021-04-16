@@ -157,6 +157,10 @@
       height: 3px;
       border-radius: 50%;
       background: var(--white-color);
+
+      @media (--mq-sm) {
+        top: 8px;
+      }
     }
   }
 

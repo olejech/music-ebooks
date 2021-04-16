@@ -26,5 +26,5 @@
   --transition: 0.25s ease-out;
 }
 
-@custom-media --mq-md (max-width: 1439px); /* Tablet */
+@custom-media --mq-md (max-width: 1200px); /* Tablet */
 @custom-media --mq-sm (max-width: 767px); /* Mobile */

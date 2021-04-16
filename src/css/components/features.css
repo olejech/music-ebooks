@@ -52,29 +52,25 @@
 
   &__label {
     position: absolute;
-    top: 40px;
-    right: -117px;
-    width: 274px;
-    height: 179px;
-    background: url('../images/icons/label-free.png') 0 0 / 274px 179px
+    top: 70px;
+    right: -37px;
+    width: 213px;
+    height: 135px;
+    background: url('../images/icons/label-free.png') 0 0 / 213px 135px
       no-repeat;
 
     @media (--mq-md) {
-      top: 43px;
-      right: -20px;
-      width: 191px;
-      height: 125px;
-      background: url('../images/icons/label-free.png') 0 0 / 191px 125px
+      top: 69px;
+      right: 10px;
+      width: 141px;
+      height: 95px;
+      background: url('../images/icons/label-free.png') 0 0 / 141px 95px
         no-repeat;
     }
 
     @media (--mq-sm) {
-      top: 117px;
-      right: -25px;
-      width: 173px;
-      height: 113px;
-      background: url('../images/icons/label-free.png') 0 0 / 173px 113px
-        no-repeat;
+      top: 127px;
+      right: -15px;
     }
   }
 
