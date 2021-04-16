@@ -3,8 +3,7 @@
   display: flex;
   justify-content: center;
   margin-top: 25px;
-  background: linear-gradient(0deg, rgb(0, 0, 0) 8%, rgb(0, 0, 0, 0.01) 74%),
-    url('../images/bg.jpg') 0 / cover no-repeat;
+  background: url('../images/bg.jpg') 0 / cover no-repeat;
   margin-bottom: 107px;
 
   &__container {
@@ -170,8 +169,8 @@
         content: '';
         position: absolute;
         top: 13px;
-        left: 74px;
-        width: 112px;
+        left: 64px;
+        width: 122px;
         height: 3px;
         background: #d9d9d9;
 
@@ -193,7 +192,7 @@
         position: absolute;
         background: var(--orange-color);
         top: 13px;
-        left: 74px;
+        left: 64px;
         width: 112px;
         height: 3px;
         width: 52px;

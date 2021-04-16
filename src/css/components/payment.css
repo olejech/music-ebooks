@@ -10,8 +10,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background: linear-gradient(0deg, rgb(0, 0, 0) 8%, rgb(0, 0, 0, 0.01) 74%),
-    url('../images/bg.jpg') 0 / cover no-repeat;
+  background: url('../images/bg.jpg') 0 / cover no-repeat;
   margin-bottom: 107px;
   font-family: var(--font-family-headings);
 
@@ -360,6 +359,48 @@
     width: 60px;
     margin-right: 10px;
     margin-bottom: 0;
+  }
+
+  &__text-field-wrap {
+    margin-right: 25px;
+
+    @media (--mq-md) {
+      margin-right: 8px;
+    }
+  }
+
+  .choices > &__text-field-select-inner {
+    background-color: transparent;
+    border: 0;
+    min-height: 41px !important;
+    height: 41px !important;
+    border: 1px solid #eff0f5 !important;
+    border-radius: 0 !important;
+    width: 187px;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #aaaaaa;
+    padding-left: 12px;
+
+    @media (--mq-md) {
+      width: 132px;
+    }
+  }
+
+  .choices.payment-card__text-field-select-outer:after {
+    right: 15px;
+  }
+
+  .choices .payment-card__text-field-select-item {
+    font-size: 12px;
+    line-height: 18px;
+    color: #aaaaaa;
+    padding-right: 10px;
+  }
+
+  .choices .choices__list--dropdown {
+    border: 1px solid #eff0f5;
   }
 
   &__question {

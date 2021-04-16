@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+    />
   </head>
   <body>
     <header class="payment-header">
@@ -74,18 +78,101 @@
             license.
           </p>
           <form class="payment-card__form">
-            <label for="card-holder" class="payment-card__text-field-label"
-              >Cardholder name</label
-            >
+            <div class="flex">
+              <div class="payment-card__text-field-wrap">
+                <label for="first-name" class="payment-card__text-field-label">
+                  First name
+                </label>
+                <input
+                  id="first-name"
+                  type="text"
+                  class="payment-card__text-field"
+                  placeholder="First name"
+                />
+              </div>
+              <div>
+                <label for="last-name" class="payment-card__text-field-label">
+                  Last name
+                </label>
+                <input
+                  id="last-name"
+                  type="text"
+                  class="payment-card__text-field"
+                  placeholder="Last name"
+                />
+              </div>
+            </div>
+
+            <label for="address" class="payment-card__text-field-label">
+              Address
+            </label>
+            <input
+              id="address"
+              type="text"
+              class="payment-card__text-field"
+              placeholder="Address"
+            />
+
+            <div class="flex">
+              <div class="payment-card__text-field-wrap">
+                <label for="city" class="payment-card__text-field-label">
+                  City
+                </label>
+                <input
+                  id="city"
+                  type="text"
+                  class="payment-card__text-field"
+                  placeholder="City"
+                />
+              </div>
+              <div>
+                <label for="state" class="payment-card__text-field-label">
+                  State
+                </label>
+                <input
+                  id="state"
+                  type="text"
+                  class="payment-card__text-field"
+                  placeholder="State"
+                />
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="payment-card__text-field-wrap">
+                <label for="code" class="payment-card__text-field-label">
+                  Zip/Postal Code
+                </label>
+                <input
+                  id="code"
+                  type="text"
+                  class="payment-card__text-field"
+                  placeholder="Zip/Postal Code"
+                />
+              </div>
+              <div>
+                <label for="country" class="payment-card__text-field-label">
+                  Country
+                </label>
+                <select id="country" class="js-select">
+                  <option disabled>Country</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="last-name" class="payment-card__text-field-label">
+              Cardholder name
+            </label>
             <input
               id="card-holder"
               type="text"
               class="payment-card__text-field"
               placeholder="Cardholder name"
             />
-            <label for="card-number" class="payment-card__text-field-label"
-              >Card Number</label
-            >
+
+            <label for="card-number" class="payment-card__text-field-label">
+              Card Number
+            </label>
             <input
               id="card-number"
               type="text"
@@ -95,9 +182,9 @@
 
             <div class="payment-card__card-info">
               <div>
-                <label for="expiry-date" class="payment-card__text-field-label"
-                  >Expiry Date</label
-                >
+                <label for="expiry-date" class="payment-card__text-field-label">
+                  Expiry Date
+                </label>
                 <input
                   id="expiry-date"
                   type="text"
@@ -106,9 +193,9 @@
                 />
               </div>
               <div>
-                <label for="cvv" class="payment-card__text-field-label"
-                  >CVV</label
-                >
+                <label for="cvv" class="payment-card__text-field-label">
+                  CVV
+                </label>
                 <input
                   id="cvv"
                   type="text"
@@ -143,5 +230,8 @@
         </div>
       </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./js/select.js"></script>
   </body>
 </html>
