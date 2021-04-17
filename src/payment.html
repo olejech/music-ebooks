@@ -70,7 +70,9 @@
           </div>
         </div>
         <div class="payment-card__right">
-          <h2 class="payment-card__right-title">Free membership: 0$</h2>
+          <h2 class="payment-card__right-title">
+            Free membership: 0<span class="payment-card__right-dollar"></span>
+          </h2>
           <p class="payment-card__right-caption">
             Your credit card will
             <span class="text-green">NOT</span> be charged for the free
@@ -80,9 +82,6 @@
           <form class="payment-card__form">
             <div class="flex">
               <div class="payment-card__text-field-wrap">
-                <label for="first-name" class="payment-card__text-field-label">
-                  First name
-                </label>
                 <input
                   id="first-name"
                   type="text"
@@ -91,9 +90,6 @@
                 />
               </div>
               <div>
-                <label for="last-name" class="payment-card__text-field-label">
-                  Last name
-                </label>
                 <input
                   id="last-name"
                   type="text"
@@ -103,9 +99,6 @@
               </div>
             </div>
 
-            <label for="address" class="payment-card__text-field-label">
-              Address
-            </label>
             <input
               id="address"
               type="text"
@@ -115,9 +108,6 @@
 
             <div class="flex">
               <div class="payment-card__text-field-wrap">
-                <label for="city" class="payment-card__text-field-label">
-                  City
-                </label>
                 <input
                   id="city"
                   type="text"
@@ -126,9 +116,6 @@
                 />
               </div>
               <div>
-                <label for="state" class="payment-card__text-field-label">
-                  State
-                </label>
                 <input
                   id="state"
                   type="text"
@@ -140,9 +127,6 @@
 
             <div class="flex">
               <div class="payment-card__text-field-wrap">
-                <label for="code" class="payment-card__text-field-label">
-                  Zip/Postal Code
-                </label>
                 <input
                   id="code"
                   type="text"
@@ -151,18 +135,12 @@
                 />
               </div>
               <div>
-                <label for="country" class="payment-card__text-field-label">
-                  Country
-                </label>
                 <select id="country" class="js-select">
                   <option disabled>Country</option>
                 </select>
               </div>
             </div>
 
-            <label for="last-name" class="payment-card__text-field-label">
-              Cardholder name
-            </label>
             <input
               id="card-holder"
               type="text"
@@ -170,9 +148,6 @@
               placeholder="Cardholder name"
             />
 
-            <label for="card-number" class="payment-card__text-field-label">
-              Card Number
-            </label>
             <input
               id="card-number"
               type="text"
@@ -182,9 +157,6 @@
 
             <div class="payment-card__card-info">
               <div>
-                <label for="expiry-date" class="payment-card__text-field-label">
-                  Expiry Date
-                </label>
                 <input
                   id="expiry-date"
                   type="text"
@@ -193,9 +165,6 @@
                 />
               </div>
               <div>
-                <label for="cvv" class="payment-card__text-field-label">
-                  CVV
-                </label>
                 <input
                   id="cvv"
                   type="text"

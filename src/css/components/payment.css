@@ -294,6 +294,15 @@
       }
     }
 
+    &-dollar {
+      display: inline-block;
+      width: 10px;
+      height: 17px;
+      background: url('../images/icons/dollar.svg') no-repeat;
+      position: relative;
+      top: 1px;
+    }
+
     @media (--mq-md) {
       padding: 20px 27px 38px 30px;
     }
@@ -320,11 +329,15 @@
     padding: 12px 15px 11px;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 600;
+    font-weight: 500;
     border: 1px solid #eff0f5;
     background: none;
-    color: #aaaaaa;
+    color: #656565;
     margin-bottom: 13px;
+
+    &::placeholder {
+      color: #656565;
+    }
 
     @media (--mq-md) {
       padding: 12px 15px 9px;
@@ -347,7 +360,7 @@
 
   &__text-field_expiry {
     width: 80px;
-    margin-right: 32px;
+    margin-right: 12px;
     margin-bottom: 0;
 
     @media (--mq-md) {
@@ -380,7 +393,7 @@
     font-size: 12px;
     line-height: 18px;
     font-weight: 600;
-    color: #aaaaaa;
+    color: #656565;
     padding-left: 12px;
 
     @media (--mq-md) {
@@ -395,7 +408,8 @@
   .choices .payment-card__text-field-select-item {
     font-size: 12px;
     line-height: 18px;
-    color: #aaaaaa;
+    color: #656565;
+    font-weight: 500;
     padding-right: 10px;
   }
 
@@ -404,11 +418,9 @@
   }
 
   &__question {
-    position: relative;
-    top: 10px;
     width: 18px;
     height: 18px;
-    margin-right: 96px;
+    margin-right: 116px;
     background: url('../images/icons/question.svg') no-repeat;
 
     @media (--mq-md) {
@@ -417,8 +429,6 @@
   }
 
   &__master-card {
-    position: relative;
-    top: 10px;
     width: 41px;
     height: 27px;
     margin-right: 6px;
@@ -433,8 +443,6 @@
   }
 
   &__visa {
-    position: relative;
-    top: 10px;
     width: 56px;
     height: 19px;
     background: url('../images/icons/visa.png') 0 / 56px 19px no-repeat;
