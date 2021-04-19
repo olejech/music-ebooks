@@ -4,6 +4,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &__logo {
+    display: block;
+    width: 116px;
+    height: 20px;
+    background: url('../images/logo.svg') no-repeat;
+
+    @media (--mq-sm) {
+      width: 54px;
+      height: 31px;
+      padding: 12px 0 13px 0;
+      background: url('../images/logo-mobile.svg') no-repeat;
+    }
+  }
+
+  @media (--mq-sm) {
+    height: 53px;
+  }
 }
 
 .payment-main {

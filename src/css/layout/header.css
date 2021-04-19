@@ -29,7 +29,7 @@
       margin-top: 20px;
     }
 
-    @media (--mq-md) {
+    @media (--mq-sm) {
       margin-top: 0;
     }
   }
