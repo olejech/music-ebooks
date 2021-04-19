@@ -33,12 +33,6 @@ function createProgressbar(id, duration, callback) {
   progressbarinner.style.animationPlayState = 'running'
 }
 
-var swiper = new Swiper('.swiper-container', {
-  pagination: {
-    el: '.swiper-pagination',
-  },
-})
-
 var buttonContinue = document.getElementById('button-continue')
 var contentNodes = document.querySelectorAll('.js-progress-content')
 var bgHeader = document.querySelector('.js-header-bg')

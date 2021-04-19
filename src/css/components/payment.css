@@ -28,7 +28,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background: url('../images/bg.jpg') 0 / cover no-repeat;
+  background: url('../images/bg-payment.jpg') 0 / cover no-repeat;
   margin-bottom: 107px;
   font-family: var(--font-family-headings);
 

@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <header class="header">
@@ -30,6 +26,9 @@
           <h1 class="header__title">
             Watch Your Favorite Titles and More for
             <span class="text-green">Free</span>
+          </h1>
+          <h1 class="header__title-mobile">
+            Sign up to unlock your content now!
           </h1>
           <div class="signup">
             <div class="signup-left">
@@ -61,7 +60,7 @@
               </div>
             </div>
 
-            <div class="signup-right">
+            <div class="signup-right container-mobile">
               <div class="signup-right__title">
                 <span class="text-green uppercase">Free</span> Registration
               </div>
@@ -111,7 +110,7 @@
           register:
         </p>
 
-        <div class="features__cards">
+        <div class="features__cards container-mobile">
           <div class="features__card features__card_blue">
             <div class="features__card-title">Free and unlimited access</div>
             <p class="features__card-text">
@@ -129,8 +128,7 @@
           <div class="features__card features__card_purple">
             <div class="features__card-title">All platforms</div>
             <p class="features__card-text">
-              Entertain yourself anywhere,<br />
-              anytime. Our platform is optimized<br />
+              Entertain yourself anywhere, anytime. Our platform is optimized
               for PC, Mac, mobile, PS4, Xbox One, and Smart TV.
             </p>
           </div>
@@ -147,27 +145,8 @@
 
       <section class="app container">
         <img src="./images/app.png" alt="App" class="app__image" />
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                src="./images/app-mobile-left.png"
-                alt="App left part"
-                class="app__image-mobile"
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="./images/app-mobile-right.png"
-                alt="App right part"
-                class="app__image-mobile"
-              />
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
 
-        <div class="app__description">
+        <div class="app__description container-mobile">
           <div class="app__item">
             <div class="app__title">The best of content</div>
             <p class="app__text">
@@ -182,7 +161,9 @@
             </p>
           </div>
           <div class="app__item">
-            <div class="app__title">Watch without any limits</div>
+            <div class="app__title app__title_list">
+              Watch without any limits
+            </div>
             <div class="app__text">
               <ul class="app__list">
                 <li class="app__item-list">
@@ -195,10 +176,15 @@
             </div>
           </div>
         </div>
+
+        <img
+          class="app__image-mobile"
+          src="./images/app-mobile.png"
+          alt="App mobile"
+        />
       </section>
     </main>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
   </body>
 </html>

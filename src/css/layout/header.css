@@ -8,6 +8,20 @@
     background: url('../images/bg.jpg') 0 / cover no-repeat;
     margin-top: 45px;
 
+    @media (--mq-md) {
+      margin-top: 20px;
+    }
+
+    @media (--mq-sm) {
+      margin-top: 0;
+      background: linear-gradient(
+          180deg,
+          rgba(65, 66, 66, 0.7) 61.59%,
+          rgba(0, 0, 0, 0.9) 100%
+        ),
+        url('../images/bg.jpg') 0 / 300% no-repeat;
+    }
+
     &_gradient {
       @media (--mq-sm) {
         height: 100vh;
@@ -23,14 +37,6 @@
           ),
           url('../images/bg.jpg') 0 / cover no-repeat;
       }
-    }
-
-    @media (--mq-md) {
-      margin-top: 20px;
-    }
-
-    @media (--mq-sm) {
-      margin-top: 0;
     }
   }
 
@@ -70,9 +76,26 @@
     }
 
     @media (--mq-sm) {
+      display: none;
       font-size: 20px;
       line-height: 24px;
       margin: 19px 0 42px;
+    }
+  }
+
+  &__title-mobile {
+    display: none;
+
+    @media (--mq-sm) {
+      display: block;
+      background: var(--white-color);
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 700;
+      font-family: var(--font-family-headings);
+      color: #040404;
+      padding: 10px 55px 8px 54px;
+      margin: 0;
     }
   }
 
@@ -81,7 +104,7 @@
   }
 
   @media (--mq-sm) {
-    margin-bottom: 96px;
+    margin-bottom: 43px;
   }
 }
 
@@ -166,7 +189,7 @@
     }
 
     @media (--mq-sm) {
-      order: 2;
+      display: none;
     }
   }
 
@@ -271,7 +294,11 @@
       }
 
       @media (--mq-sm) {
+        font-size: 22px;
+        line-height: 33px;
+        padding: 12px 79px;
         text-align: center;
+        margin-bottom: 0;
       }
     }
 
@@ -286,8 +313,7 @@
       }
 
       @media (--mq-sm) {
-        margin-bottom: 24px;
-        font-size: 13px;
+        display: none;
       }
     }
 
@@ -303,13 +329,16 @@
       }
 
       @media (--mq-sm) {
-        margin-bottom: 4px;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        margin-bottom: 7px;
       }
     }
 
     &__text-field {
       width: 100%;
-      padding: 18px 19px 14px;
+      padding: 16px 19px;
       color: #c1c1c1;
       margin-bottom: 16px;
       font-size: 14px;
@@ -318,16 +347,17 @@
       border: 0;
 
       @media (--mq-md) {
-        padding: 20px 19px 14px;
+        padding: 16px 19px 14px;
       }
 
       @media (--mq-sm) {
-        padding: 16px 19px;
+        padding: 11px 20px 12px;
+        margin-bottom: 15px;
       }
     }
 
     &__text-field:last-of-type {
-      margin-bottom: 28px;
+      margin-bottom: 14px;
     }
 
     @media (--mq-md) {
@@ -337,8 +367,8 @@
 
     @media (--mq-sm) {
       order: 1;
-      margin-top: 0;
-      margin-bottom: 60px;
+      max-width: 360px;
+      margin: 0 auto;
     }
   }
 

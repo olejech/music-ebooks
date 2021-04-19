@@ -28,6 +28,12 @@ body {
   }
 
   @media (--mq-sm) {
-    max-width: var(--page-width-sm);
+    max-width: 100%;
+  }
+}
+
+.container-mobile {
+  @media (--mq-sm) {
+    padding: 0 13px;
   }
 }
