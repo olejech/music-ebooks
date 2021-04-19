@@ -12,80 +12,96 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container container">
-        <h1 class="header__title">
-          Watch Your Favorite Titles and More for
-          <span class="text-green">Free</span>
-        </h1>
-        <div class="signup">
-          <div class="signup-left">
-            <div class="signup-left__top">
-              <img
-                class="signup-left__icon"
-                src="./images/icons/warning.svg"
-                alt="Warning image"
-              />
-              <div class="signup-left__title">
-                Sign up to unlock your content now!
+      <div class="header__logo">
+        <a href="/">
+          <image
+            class="header__logo-image"
+            src="/images/logo-mobile.svg"
+            alt="Logo"
+          />
+        </a>
+      </div>
+      <div id="progressbar" class="progressbar"></div>
+      <div class="progressbar-text js-progressbar-text">
+        Creating your account...
+      </div>
+      <div class="header__bg js-header-bg">
+        <div class="header__container container js-progress-content">
+          <h1 class="header__title">
+            Watch Your Favorite Titles and More for
+            <span class="text-green">Free</span>
+          </h1>
+          <div class="signup">
+            <div class="signup-left">
+              <div class="signup-left__top">
+                <img
+                  class="signup-left__icon"
+                  src="./images/icons/warning.svg"
+                  alt="Warning image"
+                />
+                <div class="signup-left__title">
+                  Sign up to unlock your content now!
+                </div>
+                <div class="signup-left__description">
+                  And access thousands of the best titles and more
+                </div>
               </div>
-              <div class="signup-left__description">
-                And access thousands of the best titles and more
+              <div class="signup-left__bottom">
+                <div class="signup-left__subtitle">
+                  Create your account in less than a minute
+                </div>
+                <ol class="signup-steps">
+                  <li class="signup-steps__item signup-steps__item_active">
+                    <span></span>
+                    Registration
+                  </li>
+                  <li class="signup-steps__item">Validation</li>
+                  <li class="signup-steps__item">Unlimited Access</li>
+                </ol>
               </div>
             </div>
-            <div class="signup-left__bottom">
-              <div class="signup-left__subtitle">
-                Create your account in less than a minute
-              </div>
-              <ol class="signup-steps">
-                <li class="signup-steps__item signup-steps__item_active">
-                  <span></span>
-                  Registration
-                </li>
-                <li class="signup-steps__item">Validation</li>
-                <li class="signup-steps__item">Unlimited Access</li>
-              </ol>
-            </div>
-          </div>
 
-          <div class="signup-right">
-            <div class="signup-right__title">
-              <span class="text-green uppercase">Free</span> Registration
+            <div class="signup-right">
+              <div class="signup-right__title">
+                <span class="text-green uppercase">Free</span> Registration
+              </div>
+              <div class="signup-right__description">
+                Fill in the fields below to create your account:
+              </div>
+              <form>
+                <label for="email" class="signup-right__text-field-label"
+                  >Email Address</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  class="signup-right__text-field"
+                  placeholder="Your Email Address"
+                />
+                <label for="password" class="signup-right__text-field-label"
+                  >Password</label
+                >
+                <input
+                  id="password"
+                  type="password"
+                  class="signup-right__text-field"
+                  placeholder="Password"
+                />
+                <a
+                  id="button-continue"
+                  href="#"
+                  class="button button_success uppercase"
+                >
+                  Continue
+                </a>
+              </form>
             </div>
-            <div class="signup-right__description">
-              Fill in the fields below to create your account:
-            </div>
-            <form>
-              <label for="email" class="signup-right__text-field-label"
-                >Email Address</label
-              >
-              <input
-                id="email"
-                type="email"
-                class="signup-right__text-field"
-                placeholder="Your Email Address"
-              />
-              <label for="password" class="signup-right__text-field-label"
-                >Password</label
-              >
-              <input
-                id="password"
-                type="password"
-                class="signup-right__text-field"
-                placeholder="Password"
-              />
-              <a
-                href="/moviestreaming/payment.html"
-                class="button button_success uppercase"
-              >
-                Continue
-              </a>
-            </form>
           </div>
         </div>
       </div>
     </header>
 
-    <main>
+    <main class="js-progress-content">
       <section class="features container">
         <h2 class="features__title">
           Find out why thousands of people sign up every day.

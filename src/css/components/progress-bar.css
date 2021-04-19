@@ -1,0 +1,65 @@
+.progressbar {
+  display: none;
+
+  &.active {
+    position: absolute;
+    display: block;
+    width: 157px;
+    z-index: 1;
+    top: 89px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.progressbar-text {
+  display: none;
+
+  &.active {
+    position: absolute;
+    display: block;
+    color: var(--white-color);
+    font-size: 14px;
+    line-height: 17px;
+    font-family: var(--font-family-headings);
+    font-weight: 700;
+    z-index: 1;
+    top: 132px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.progressbar .inner {
+  height: 9px;
+  background: #444444;
+  border-radius: 20px 0px 0px 20px;
+  animation: progressbar-countup, progressbar-border-radius;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+  animation-timing-function: linear;
+}
+
+@keyframes progressbar-countup {
+  0% {
+    width: 0%;
+    background: #92d048;
+  }
+
+  100% {
+    width: 100%;
+    background: #92d048;
+  }
+}
+
+@keyframes progressbar-border-radius {
+  90% {
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  100% {
+    border-radius: 20px;
+  }
+}

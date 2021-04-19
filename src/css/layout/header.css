@@ -1,10 +1,55 @@
 .header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 25px;
-  background: url('../images/bg.jpg') 0 / cover no-repeat;
   margin-bottom: 107px;
+
+  &__bg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url('../images/bg.jpg') 0 / cover no-repeat;
+    margin-top: 45px;
+
+    &_gradient {
+      @media (--mq-sm) {
+        height: 100vh;
+        background: linear-gradient(
+            360deg,
+            #000000 75.03%,
+            rgba(0, 0, 0, 0) 100%
+          ),
+          linear-gradient(
+            180deg,
+            rgba(31, 31, 31, 0.7) 61.59%,
+            rgba(0, 0, 0, 0.9) 100%
+          ),
+          url('../images/bg.jpg') 0 / cover no-repeat;
+      }
+    }
+
+    @media (--mq-md) {
+      margin-top: 20px;
+    }
+
+    @media (--mq-md) {
+      margin-top: 0;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @media (--mq-sm) {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-image {
+      @media (--mq-sm) {
+        display: block;
+        width: 52px;
+        padding: 12px 0 13px 0;
+      }
+    }
+  }
 
   &__container {
     text-align: center;
@@ -32,12 +77,10 @@
   }
 
   @media (--mq-md) {
-    margin-top: 20px;
     margin-bottom: 101px;
   }
 
   @media (--mq-sm) {
-    margin-top: 45px;
     margin-bottom: 96px;
   }
 }
