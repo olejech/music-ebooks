@@ -106,31 +106,37 @@
 
     &_blue {
       border-left: 3px solid var(--blue-color);
-      background: url('../images/icons/clock.svg') top 22px left 50% / 26px 26px
-          no-repeat,
+      background: url('../images/icons/clock.svg') top 22px left 20px / 26px
+          26px no-repeat,
         #212121;
 
       @media (--mq-sm) {
         border: 0;
         min-width: 253px;
         padding: 66px 9px 36px 20px;
+        background: url('../images/icons/clock.svg') top 22px left 50% / 26px
+            26px no-repeat,
+          #212121;
       }
     }
 
     &_orange {
       border-left: 3px solid var(--orange-color);
-      background: url('../images/icons/cube.svg') top 22px left 50% / 26px 26px
+      background: url('../images/icons/cube.svg') top 22px left 20px / 26px 26px
           no-repeat,
         #212121;
 
       @media (--mq-sm) {
         border: 0;
+        background: url('../images/icons/cube.svg') top 22px left 50% / 26px
+            26px no-repeat,
+          #212121;
       }
     }
 
     &_purple {
       border-left: 3px solid var(--purple-color);
-      background: url('../images/icons/platforms.svg') top 22px left 50% / 26px
+      background: url('../images/icons/platforms.svg') top 22px left 20px / 26px
           26px no-repeat,
         #212121;
 
@@ -144,12 +150,15 @@
 
     &_red {
       border-left: 3px solid var(--red-color);
-      background: url('../images/icons/cancel.svg') top 22px left 50% / 26px
+      background: url('../images/icons/cancel.svg') top 22px left 20px / 26px
           26px no-repeat,
         #212121;
 
       @media (--mq-sm) {
         border: 0;
+        background: url('../images/icons/cancel.svg') top 22px left 50% / 26px
+            26px no-repeat,
+          #212121;
       }
     }
   }
