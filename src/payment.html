@@ -6,10 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
-    />
   </head>
   <body>
     <header class="payment-header">
@@ -152,12 +148,14 @@
                   placeholder="Zip/Postal Code"
                 />
               </div>
-              <div class="payment-card__wrap-select">
+              <div class="select-wrap payment-card__wrap-select">
                 <label for="country" class="payment-card__text-field-label">
                   Country
                 </label>
-                <select id="country" class="js-select">
-                  <option disabled>Country</option>
+                <select id="country" class="select">
+                  <option selected disabled>Country</option>
+                  <option value="option1">Option 1</option>
+                  <option value="option1">Option 2</option>
                 </select>
               </div>
             </div>
@@ -253,8 +251,5 @@
         </div>
       </div>
     </main>
-
-    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="./js/select.js"></script>
   </body>
 </html>

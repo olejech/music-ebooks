@@ -427,6 +427,7 @@
     line-height: 18px;
     font-weight: 500;
     border: 1px solid #eff0f5;
+    border-radius: 0;
     background: none;
     color: #656565;
     margin-bottom: 13px;
@@ -505,61 +506,6 @@
 
   &__wrap-select {
     flex: 0 1 50%;
-  }
-
-  .choices > &__text-field-select-inner {
-    background-color: transparent;
-    border: 0;
-    min-height: 41px !important;
-    height: 41px !important;
-    border: 1px solid #eff0f5 !important;
-    border-radius: 0 !important;
-    width: 187px;
-    font-size: 12px;
-    line-height: 18px;
-    font-weight: 600;
-    color: #656565;
-    padding-left: 12px;
-
-    @media (--mq-md) {
-      width: 132px;
-    }
-
-    @media (--mq-sm) {
-      min-height: 44px !important;
-      height: 44px !important;
-      width: 100%;
-      flex: 1 1 100%;
-      color: #aaaaaa;
-    }
-  }
-
-  .choices.payment-card__text-field-select-outer:after {
-    right: 15px;
-  }
-
-  .choices .payment-card__text-field-select-item {
-    font-size: 12px;
-    line-height: 18px;
-    color: #656565;
-    font-weight: 500;
-    padding-right: 10px;
-
-    @media (--mq-sm) {
-      color: #aaaaaa;
-    }
-  }
-
-  .choices .choices__list--dropdown {
-    border: 1px solid #eff0f5;
-  }
-
-  .choices[data-type*='select-one']:after {
-    border-width: 8px !important;
-  }
-
-  .choices[data-type*='select-one'].is-open:after {
-    margin-top: -12.5px !important;
   }
 
   &__question {
