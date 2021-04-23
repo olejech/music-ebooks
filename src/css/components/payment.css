@@ -336,6 +336,18 @@
     }
   }
 
+  &__form {
+    margin: 12px 0 0;
+
+    @media (--mq-md) {
+      margin: 11px 0 0;
+    }
+
+    @media (--mq-sm) {
+      margin: 14px auto 0;
+    }
+  }
+
   &__right {
     padding: 22px 30px 14px;
     background: var(--white-color);
@@ -362,20 +374,56 @@
       font-size: 10px;
       line-height: 15px;
       font-weight: 600;
-      margin: 0 0 26px;
       max-width: 390px;
-
-      @media (--mq-md) {
-        margin: 0 0 8px;
-      }
+      margin: 0;
 
       @media (--mq-sm) {
         text-align: center;
         max-width: 304px;
         margin: 0 auto;
         color: #040404;
-        margin-bottom: 14px;
       }
+    }
+
+    &-error {
+      display: none;
+      padding: 15px 0;
+      background: #f0d3d5;
+      border: 1px solid #da3023;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 600;
+      color: #da3023;
+      margin: 13px 0;
+
+      &.active {
+        display: block;
+      }
+
+      @media (--mq-md) {
+        margin: 9px 0 15px;
+      }
+
+      @media (--mq-sm) {
+        padding: 12px 0 11px;
+      }
+
+      &.active + .payment-card__form {
+        margin: 0;
+
+        @media (--mq-md) {
+          margin: 15px 0;
+        }
+
+        @media (--mq-sm) {
+          margin: 12px 0;
+        }
+      }
+    }
+
+    &-error-message {
+      max-width: 185px;
+      margin: 0 auto;
     }
 
     &-sum {
